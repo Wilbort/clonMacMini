@@ -29,6 +29,10 @@
     letter-spacing: 0.012em;
 }
 
+.feature-panel .description .accent {
+    color: var(--text-color-alt);
+}
+
 .feature-panel .button {
     padding: 0.75rem 1.25rem;
 }
@@ -41,8 +45,9 @@
 }
 
 .feature-panel .characteristic-container {
+    --column-width: 250px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(var(--column-width), 1fr));
     gap: 3rem;
     margin-bottom: 4rem;
     font-size: 1.25rem;
@@ -187,5 +192,49 @@
     .feature-panel.gpu .characteristic-container {
         gap: 0;
         padding-top: 3rem;
+    }
+}
+
+/* ----- Aprendizaje contínuo ----- */
+.feature-panel.learning {
+    background-image: linear-gradient(-135deg, #590a0d 0%, #10071c 100%);
+}
+
+.feature-panel.learning .description {
+    font-size: var(--big-body-size);
+    line-height: 1.2;
+}
+
+.feature-panel.learning .characteristic-container {
+    font-weight: var(--medium-font);
+}
+
+@media screen and (min-width: 734px) {
+    .feature-panel.learning .characteristic-container {
+        --column-width: 9.25rem;
+        gap: 1rem;
+        align-items: end;
+    }
+
+    .feature-panel.learning .number {
+        --size: 5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .feature-panel.learning .content {
+        --max-width: 35rem;
+    }
+
+    .feature-panel.learning .characteristic-container {
+        --column-width: 12.5rem;
+    }
+
+    .feature-panel.learning .characteristic {
+        font-size: 1rem;
+    }
+
+    .feature-panel.learning .characteristic-container .characteristic br {
+        display: none;
     }
 }
