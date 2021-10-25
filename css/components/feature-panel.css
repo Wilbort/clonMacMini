@@ -249,3 +249,27 @@
     font-size: var(--normal-title-size);
     line-height: 1.05;
 }
+
+/* ----- Speed ----- */
+.feature-panel.speed .description {
+    margin-bottom: 3rem;
+}
+
+.feature-panel.speed .subtitle {
+    text-align: center;
+    line-height: 1;
+}
+
+.feature-panel.speed .first-line {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+}
+
+.feature-panel.speed :is(.second-line, .background-container) {
+    opacity: 0.15;
+    transition: opacity 500ms;
+}
+
+.feature-panel.speed.is-active :is(.second-line, .background-container) {
+    opacity: initial;
+}
