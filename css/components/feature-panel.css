@@ -350,6 +350,41 @@
     }
 }
 
+/* ----- Memory ----- */
+.feature-panel.memory :is(.title.title, .description) {
+    margin-bottom: 0;
+}
+
+.feature-panel.memory .icon {
+    margin-bottom: 1.25rem;
+}
+
+.feature-panel.memory .wrapper {
+    padding-block: 9rem;
+}
+
+.feature-panel.memory .description {
+    font-size: var(--big-body-size);
+    line-height: var(--title-line-height);
+}
+
+@media screen and (min-width: 1024px) {
+    .feature-panel.memory {
+        display: flex;
+    }
+
+    .feature-panel.memory .content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .feature-panel.memory .wrapper {
+        padding: 0;
+        margin-block: auto;
+    }
+}
+
 /* ----- Subgrid de características ----- */
 .sub-grid {
     display: grid;
