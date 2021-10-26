@@ -273,3 +273,45 @@
 .feature-panel.speed.is-active :is(.second-line, .background-container) {
     opacity: initial;
 }
+
+/* ----- Apps ----- */
+.feature-panel.apps .description{
+    margin-bottom: 2rem;
+}
+
+.feature-panel.apps .apps-image {
+    width: 90%;
+    display: block;
+    margin-inline: auto;
+}
+
+/* ----- Subgrid de características ----- */
+.sub-grid {
+    display: grid;
+    gap: var(--gap);
+}
+
+.sub-grid .feature-panel .title {
+    margin-bottom: 1.25rem;
+}
+
+.sub-grid .feature-panel .content {
+    max-width: initial;
+    padding-right: var(--padding);
+}
+
+@media screen and (min-width: 734px) {
+    .sub-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sub-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .feature-panel:is(.speed, .apps) {
+        grid-column-start: span 3;
+    }
+}

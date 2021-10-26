@@ -11,8 +11,9 @@
 }
 
 .grid-section {
+    --gap: 1.5rem;
     display: grid;
-    gap: 1.5rem;
+    gap: var(--gap);
     width: 100%;
     max-width: 25rem; /* 400px */
     margin-inline: auto;
