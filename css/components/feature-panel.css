@@ -285,6 +285,71 @@
     margin-inline: auto;
 }
 
+/* ----- Compact ----- */
+.feature-panel.compact {
+    background-color: var(--bg-color);
+}
+
+.feature-panel.compact .content {
+    padding-bottom: 0;
+}
+
+.feature-panel.compact .description {
+    margin-bottom: 1.25rem;
+}
+
+.feature-panel.compact .video-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: var(--padding);
+    padding-top: 0;
+}
+
+.feature-panel.compact .video {
+    width: 6rem;
+}
+
+.feature-panel.compact .subtitle {
+    margin-bottom: 0;
+    background-image: linear-gradient(-120deg, #f50581 0%, #f81337 100%);
+    background-size: 100% 200%;
+    background-position: 50% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 734px) {
+    .feature-panel.compact .subtitle {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .feature-panel.compact .description {
+        max-width: var(--medium-max-width);
+        margin-bottom: 8rem;
+    }
+    
+    .feature-panel.compact .subtitle {
+        font-size: 4rem;
+        max-width: 30rem;
+    }
+
+    .feature-panel.compact .video-container {
+        flex-direction: row;
+        gap: 2rem;
+        padding: 0 0 4rem;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .feature-panel.compact .video {
+        width: 8rem;
+        height: 16rem;
+    }
+}
+
 /* ----- Subgrid de características ----- */
 .sub-grid {
     display: grid;
@@ -307,11 +372,11 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .sub-grid {
-        grid-template-columns: repeat(6, 1fr);
+    .sub-grid.three-columns {
+        grid-template-columns: repeat(3, 1fr);
     }
-
-    .feature-panel:is(.speed, .apps) {
-        grid-column-start: span 3;
+    
+    .sub-grid.three-columns .feature-panel:first-of-type {
+        grid-column-start: span 2;
     }
 }
