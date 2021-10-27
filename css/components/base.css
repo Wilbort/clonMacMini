@@ -92,7 +92,6 @@ a.arrow::after {
     background-color: var(--bg-color-alt);
 }
 
-/* TODO: Eliminar esto cuando ya se tengan las secciones*/
-.section-placeholder {
-    min-height: 100vh;
+.image-container {
+    position: relative;
 }
