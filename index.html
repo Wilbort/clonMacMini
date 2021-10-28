@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/components/main-hero-banner.css">
     <link rel="stylesheet" href="./css/components/chip-section.css">
     <link rel="stylesheet" href="./css/components/feature-panel.css">
+    <link rel="stylesheet" href="./css/components/padlock-animation.css">
 
     <script src="./js/index.js" type="module"></script>
 </head>
@@ -70,7 +71,7 @@
         </section>
 
         <!-- Presentación del chip m1 -->
-        <section class="chip-section">
+        <section id="why-mac" class="chip-section">
             <div class="container">
                 <img class="logo" src="./media/img/m1-logo.png" alt="Logo chip M1">
                 <h2 class="big-title">Un chip pequeño. <br/> Un avance enorme</h2>
@@ -86,7 +87,7 @@
         </section>
 
         <!-- Sección del grid m1 -->
-        <div id="why-mac" class="grid-section">
+        <div id="specifications" class="grid-section">
 
             <section class="feature-panel cpu">
                 <div class="content">
@@ -276,11 +277,25 @@
                         <img src="./media/img/ssd.png" alt="Almacenamiento" class="image">
                     </div>
                 </section>
+
+                <section class="feature-panel security" id="feature-panel-security">
+                    <div class="content">
+                        <h2 class="title">Seguridad</h2>
+                    </div>
+                    <div>
+                        <div class="padlock" id="padlock"></div>
+                        <h3 class="message" id="message">
+                            Todos tus <span data-text="datos" id="masked-data-text">•••••</span><br/>
+                            están bajo <span data-text="llave." id="masked-data-key">••••••</span>
+                        </h3>
+                    </div>
+                    <button class="button ghost">Cómo el chip M1 protege tus datos</button>
+                </section>
             </div>
 
         </div>
 
-        <section id="specifications" class="section-placeholder">
+        <section id="w" class="section-placeholder">
             <h2>Especificaciones</h2>
         </section>
     </main>
