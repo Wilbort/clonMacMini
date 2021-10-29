@@ -106,15 +106,15 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--body-font);
 }
 
-
-
-
-
 .big-title {
     font-size: var(--bigger-title-size);
     font-weight: var(--bold-font);
     letter-spacing: -0.015em;
     margin-bottom: 0.75rem;
+}
+
+.big-title .accent {
+    color: var(--text-color-alt);
 }
 
 .big-description {

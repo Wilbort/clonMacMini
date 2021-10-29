@@ -84,6 +84,10 @@ a.arrow::after {
     vertical-align: middle;
 }
 
+img {
+    max-width: 100%;
+}
+
 .black-background {
     background-color: var(--bg-color);
 }
