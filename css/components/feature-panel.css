@@ -639,8 +639,11 @@
     }
 }
 
-/* ----- Subgrid de características ----- */
-
+/* ----- Hero panel ----- */
+.feature-panel.hero-panel .content {
+    display: flex;
+    flex-direction: column;
+}
 
 /* ----- Alturas mínimas ----- */
 .feature-panel:is(.ar, .mac-os, .hero-panel) {
