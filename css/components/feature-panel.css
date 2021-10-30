@@ -92,6 +92,18 @@
     object-fit: cover;
 }
 
+/* ----- Variación de los content (minimal-content) ----- */
+.feature-panel.minimal-content {
+    text-align: center;
+}
+
+.feature-panel.minimal-content .subtitle {
+    font-size: var(--small-title-size);
+    font-weight: var(--semi-bold-font);
+    line-height: 1.08;
+    margin-bottom: 1.25rem;
+}
+
 @media screen and (min-width: 360px) {
     .feature-panel {
         border-radius: 1.25rem;
@@ -493,6 +505,86 @@
 @media screen and (min-width: 1024px) {
     .feature-panel.wifi .icon {
         width: 8.5rem;
+    }
+}
+
+/* ----- AR ----- */
+.feature-panel.ar {
+    padding-inline: 0;
+    background-color: var(--bg-color-alt);
+}
+
+.feature-panel.ar .icon {
+    width: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.feature-panel.ar .image-container {
+    display: flex;
+    align-items: flex-end;
+    margin-inline: auto;
+    width: 17rem;
+}
+
+@media screen and (min-width: 734px) {
+    .feature-panel.ar {
+        display: flex;
+        text-align: left;
+        padding-left: 8%;
+    }
+
+    .feature-panel.ar .content {
+        padding: 0;
+        margin: auto;
+    }
+
+    .feature-panel.ar .image-container {
+        width: 19rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .feature-panel.ar {
+        min-height: 38rem;
+    }
+
+    .feature-panel.ar .icon {
+        width: 3.25rem;
+    }
+
+    .feature-panel.ar .image-container {
+        width: 25.5rem;
+    }
+}
+
+/* ----- Mac OS ----- */
+.feature-panel.mac-os {
+    flex-direction: column;
+}
+
+.feature-panel.mac-os .icon {
+    height: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.feature-panel.mac-os .link {
+    color: inherit;
+}
+
+@media screen and (min-width: 1024px) {
+    .feature-panel.mac-os .icon {
+        height: 1.75rem;
+    }
+}
+
+/* ----- Alturas mínimas ----- */
+.feature-panel:is(.ar, .mac-os) {
+    min-height: 31rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .feature-panel:is(.ar, .mac-os) {
+        min-height: 38rem;
     }
 }
 
