@@ -451,6 +451,51 @@
     margin-bottom: var(--padding);
 }
 
+/* ----- Thunderbolt ----- */
+.feature-panel.thunderbolt {
+    min-height: 42.5rem;
+}
+
+.feature-panel.thuderbold .description {
+    max-width: var(--large-max-width);
+}
+
+@media screen and (min-width: 1024px) {
+    .feature-panel.thuderbold .description {
+        max-width: var(--medium-max-width);
+    }
+}
+
+/* ----- Wifi ----- */
+.feature-panel.wifi {
+    background-image: linear-gradient(140deg, #e349c4 0%, #7748ef 100%);
+}
+
+.feature-panel.wifi .wrapper {
+    text-align: center;
+    padding-block: 1rem 2rem;
+}
+
+.feature-panel.wifi .icon {
+    width: 7.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-panel.wifi .big-title {
+    font-family: var(--display-font);
+}
+
+.feature-panel.wifi .sub-caption {
+    font-size: 1.25rem;
+    font-weight: var(--semi-bold-font);
+}
+
+@media screen and (min-width: 1024px) {
+    .feature-panel.wifi .icon {
+        width: 8.5rem;
+    }
+}
+
 /* ----- Subgrid de características ----- */
 .sub-grid {
     display: grid;
