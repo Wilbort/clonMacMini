@@ -614,6 +614,7 @@
     display: block;
     margin-inline: auto;
     width: 10rem;
+    margin-bottom: 2rem; /* 0 */
 }
 
 @media screen and (min-width: 734px) {
@@ -630,7 +631,7 @@
     }
 
     .feature-panel.trade-in .link {
-        margin-bottom: 3rem;
+        margin-bottom: 0rem; /* 3rem */
     }
 
     .feature-panel.trade-in .mac-image {
@@ -638,13 +639,16 @@
     }
 }
 
+/* ----- Subgrid de características ----- */
+
+
 /* ----- Alturas mínimas ----- */
-.feature-panel:is(.ar, .mac-os) {
+.feature-panel:is(.ar, .mac-os, .hero-panel) {
     min-height: 31rem;
 }
 
 @media screen and (min-width: 1024px) {
-    .feature-panel:is(.ar, .mac-os) {
+    .feature-panel:is(.ar, .mac-os, .hero-panel) {
         min-height: 38rem;
     }
 }

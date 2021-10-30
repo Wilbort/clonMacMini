@@ -19,6 +19,16 @@
     margin-inline: auto;
 }
 
+.last-grid-section {
+    position: relative;
+    z-index: var(--z-normal);
+    background-color: var(--bg-color);
+}
+
+.last-grid-section .grid-section {
+    padding-block: var(--gap);
+}
+
 .center-x {
     left: 50%;
     transform: translateX(-50%);
